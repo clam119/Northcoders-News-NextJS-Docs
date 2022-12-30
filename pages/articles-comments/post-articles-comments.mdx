@@ -1,0 +1,29 @@
+## Description
+This will post a new comment on a specified article provided the user makes a successful post request.
+
+## Request Body
+
+Accepts the following keys:
+
+- username: String **required** 
+- body: String **required**
+
+```json
+{
+    "username": "grumpy19",
+    "description": "Another amazing article Mr Tickle!"
+}
+```
+
+## Example Response
+
+```json
+{
+	"comment_id": 303,
+	"body": "Another amazing article Mr Tickle!",
+	"article_id": 1,
+	"author": "grumpy19",
+	"votes": 0,
+	"created_at": "2022-10-29T15:42:49.872Z"
+}
+```

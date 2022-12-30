@@ -1,0 +1,30 @@
+# Northcoders News API Reference
+ 
+Welcome to the Northcoders News API Reference page! Below are the available endpoints that you have access to. Feel free to click on the below links or check the 
+side navigation bar.
+
+## Articles
+* [GET /api/articles](/articles/get-articles) - Retrieve all of the available articles in the database.
+* [POST /api/articles](/articles/post-articles) - Post an article to the database.
+* [GET /api/articles/:article_id](/articles/get-articles-by-id) - Retrieve a specific article by its ID from the database.
+* [PATCH /api/articles/:article_id](/articles/patch-articles-by-id) - Update the vote count for a specific article by its ID from the database.
+* [DELETE /api/articles/:article_id](/articles/delete-articles-by-id) - Delete a specific article by its ID from the database.
+
+## Article Comments
+* [GET /api/articles/:article_id/comments](/articles-comments/get-articles-comments) - Retrieve all of the comments from a specific article by its ID from the database.
+* [POST /api/articles/:article_id/comments](/articles-comments/post-articles-comments) - Post a comment to a specific article by its ID from the database.
+
+## Comments
+* [GET /api/comments](/comments/get-comments) - Retrieve all of the available comments in the database.
+* [GET /api/comments/:comment_id](/comments/get-comment-by-id) - Retrieve a specific comment by its ID from the database.
+* [PATCH /api/comments/:comment_id](/comments/patch-comment-by-id) - Update the vote count for a specific comment by its ID from the database.
+* [DELETE /api/comments/:comment_id](/comments/delete-comment-by-id) - Delete a specific comment by its ID from the database.
+
+## Topics
+* [GET /api/topics](/topics/get-topics) - Retrieve all of the available topics in the database.
+* [POST /api/topics](/topics/post-topics) - Post a topic to the database.
+
+## Users
+* [GET /api/users](/users/get-users) - Retrieve all of the available users in the database.
+* [GET /api/users/:username](/users/get-users-by-username) - Retrieve a specific user's data by their username from the database.
+* [POST /api/users](/users/post-user) - Create a new user an add it to the database.

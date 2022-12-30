@@ -1,0 +1,39 @@
+## Description
+This will post a new article provided the user makes a successful POST request with the required fields being filled in correctly.
+
+## Request Body
+
+Accepts the following keys:
+
+- author: `String` **required** 
+- title: `String` **required**
+- body: `String` **required**
+- topic: `String` **required**
+
+The `author` key simply refers to the username from the database.
+
+```json
+{
+    "author": "grumpy19",
+    "title": "Thank you Christian and Mitch",
+	"body": "You two have been the most amazing mentors that we could have ever asked for. On October 28th 2022 for the Northcoders August 30th Cohort, we have had to bid our two favourite mentors goodbye. However, goodbyes are only temporary and we will see you both again soon. All of the best for the future cohorts and more you two!",
+	"topic": "coding"
+}
+```
+
+## Example Response
+
+A successful article POST request will respond with all of the properties above as well as the following properties of: `article_id`, `votes`, `created_at` and `comment_count`. 
+
+```json
+{
+	"article_id": 37,
+	"title": "Thank you Christian and Mitch",
+	"topic": "coding",
+	"author": "grumpy19",
+	"body": "You two have been the most amazing mentors that we could have ever asked for. On October 28th 2022 for the Northcoders August 30th Cohort, we have had to bid our two favourite mentors goodbye. However, goodbyes are only temporary and we will see you both again soon. All of the best for the future cohorts and more you two!",
+	"created_at": "2022-10-29T16:01:34.834Z",
+	"votes": 0,
+	"comment_count": 0
+}
+```

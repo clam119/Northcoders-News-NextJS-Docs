@@ -1,0 +1,31 @@
+## Description
+This will update a comment's vote count by what the user passes in through the request body.
+
+## Request Body
+
+Accepts the following keys:
+
+- comment_id: `Number` **required** 
+- inc_votes: `Number` **required** 
+
+
+```json
+{
+  "comment_id": 89,
+  "inc_votes": 5
+}
+```
+
+## Example Response
+
+If a successful patch request is mad to the specified comment, then the votes property for that comment will increase by the specified amount.
+
+```json
+{
+  "comment_id": 89,
+  "body": "Esse et expedita harum non. Voluptatibus commodi voluptatem. Minima velit suscipit numquam ea. Id vitae debitis aut incidunt odio quo quam possimus ipsum.",
+  "author": "cooljmessy",
+  "votes": 7,
+  "created_at": "2020-10-24T07:08:00.000Z"
+}
+```

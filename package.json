@@ -1,0 +1,24 @@
+{
+  "name": "northcoders-news-nextjs-docs",
+  "version": "1.0.0",
+  "description": "The official documentation for the Northcoders News NextJS Full-Stack Web Application.",
+  "main": "next.config.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Clam119",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.1",
+    "nextra": "^2.0.2",
+    "nextra-theme-docs": "^2.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}

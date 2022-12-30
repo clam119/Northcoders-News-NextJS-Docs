@@ -1,0 +1,31 @@
+## Description
+This will post a new users that's created upon a succesful post request. 
+
+## Request Body
+
+Accepts the following keys:
+
+- username: `String` **required** 
+- name: `String` **required**
+- avatar_url `String` **required**
+
+The `username` property will reference the users's online alias. The `name` will reference the user's real name, and the `avatar_url` property will display the user's avatar image.
+Upon a successful user creation, the user will have their details returned to them. 
+
+```json
+{
+    "username": "RickRolled",
+    "name": "Rick Astley",
+    "avatar_url": "https://i.ibb.co/hZhBmF5/34915.jpg"
+}
+```
+
+## Example Response
+
+```json
+{
+    "username": "RickRolled",
+    "name": "Rick Astley",
+    "avatar_url": "https://i.ibb.co/hZhBmF5/34915.jpg"
+}
+```
